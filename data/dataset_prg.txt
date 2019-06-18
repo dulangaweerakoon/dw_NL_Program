@@ -1,0 +1,109 @@
+clusterof all blue 1 arg1 backof all arg1 1 ans
+clusterof all green 1 arg1 furthest you arg1 1 ans
+clusterof all blue 1 leftof all arg1 1 ans
+clusterof all blue 1 arg1 clusterof all blue 1 arg2 clusterof all green 1 arg3 clusterof all orange 1 arg4 and arg2 arg3 arg5 nextto arg5 arg1 1 arg6 above arg4 arg1 1 arg7 and arg6 arg7 ans
+clusterof all orange 1 arg1 leftof you arg1 1 arg2 closest me orange 1 arg3 and arg2 arg3 ans
+clusterof all yellow 1 ans
+closest you orange 1 ans
+clusterof all blue 1 arg1 rightof you arg1 2 ans
+clusterof all yellow 1 ans
+closest you orange 1 ans
+clusterof all green 1 arg1 clusterof all green 3 arg2 middle arg2 arg1 1 ans
+closest me orange 1 ans
+leftof all none 2 ans
+furthest you yello 1 ans
+clusterof all yellow 1 ans
+centerof all green 1 arg1 clusterof all orange 2 arg2 nextto arg2 arg1 1 ans
+leftof you green 5 arg1 centerof arg1 green 1 ans
+closest you green 1 ans
+closest you blue 2 ans
+closest all green 1 ans
+leftof you green 1 arg1 closest you green 3 arg2 and arg1 arg2 ans
+closest you orange 1 ans
+farthest you orange 1 ans
+closest you orange 1 ans
+furthest you green 1 ans
+closest you green 1 ans 
+farleft you blue 1 ans
+centerof all green 1 ans
+leftof you green 1 ans
+leftof you yellow 2 ans
+closest you orange 1 ans
+farthest you blue 1 ans 
+leftof all blue 3 ans
+clusterof all yellow 1 ans
+closest you green 1 ans 
+clusterof all yellow 1 arg1 closest arg1 orange 1 ans
+closest you blue 4 ans
+clusterof all yellow 1 ans
+frontof me orange 3 arg1 middleof arg1 orange 1 ans
+closest you green 1 ans
+closest you green 1 ans
+clusterof all green 5 arg1 centerof arg1 green 1 ans
+furthest you yellow ans
+leftof you blue 1 ans
+closest you blue 1 ans
+closest you orange 1 ans
+farthest you green 1 ans 
+farthest you orange 1 ans  
+rightof you orange 1 ans
+furthest you yellow 1 ans
+closest you green 1 ans
+closest you green 1 ans
+clusterof all green 1 arg1 closest arg1 yellow 1 ans
+closest you orange 1 arg1 closest arg1 blue 1 ans
+closest you green 1 ans 
+rightof you blue 1 ans
+closest me green 1 ans
+leftof you orange 1 ans
+clusterof all blue 1 arg1 closest arg1 green 1 ans
+closest you green 1 ans
+closest you orange 1 ans
+closest all green 1 ans
+furthest you blue 2 ans
+furthest you yellow 1 ans
+closest you green 1 ans
+centerof all green 1 ans
+closest you orange 1 ans
+closest me green 1 ans
+furthest you blue 1 arg1 belowof arg1 blue 1 ans
+furthest you orange 1 ans
+closest you green 1 ans
+furthest you green 1 ans
+closest you green 1 arg1 closest arg1 yellow 1 ans
+clusterof all yellow 1 ans
+furthest you orange 1 arg1 closest me orange 1 arg2 and arg1 arg2 ans
+closest you green 1 ans
+furthest you orange 1 arg1 leftof all orange 1 arg2 and arg1 arg2 ans
+closest me yellow 1 ans
+closest me green 1 ans
+closest you orange 1 ans
+closest you green 1 ans
+furthest me orange 1 ans
+clusterof all green all arg1 middleof arg1 green 1 ans
+closest you orange 1 ans
+furthest you none 1 ans
+clusterof all yellow 1 arg1 clusterof all orange 1 arg2 and arg1 arg2 arg3 middleof arg3 blue 1 ans
+closest you green 1 ans
+furthest you yellow 1 ans
+clusterof all yellow 1 arg1 belowof arg1 green 1 ans
+furthest you blue 1 arg1 clusterof all orange 1 arg2 aboveof arg2 none 1 arg3 and arg1 arg3 ans
+furthest you blue 1 ans
+closest you green 1 ans
+closest all green 1 ans
+closest me green 1 ans
+furthest you yellow 1 ans
+furthest you orange 1 ans
+closest you green 1 ans
+closest you green 1 ans 
+closest you orange 1 ans
+closest me blue 1 ans
+closest you green 1 ans
+closest you green 1 ans
+closest me orange 1 ans
+closest you green 1 ans
+closest me yellow 1 ans
+closest none orange 1 ans
+furthest you blue 2 ans
+leftmost none none 1 ans
+closest you orange 1 ans

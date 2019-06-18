@@ -1,0 +1,109 @@
+blue block in the back of all the other blocks    clusterof all blue 1 arg1 backof all arg1 1 ans
+Pick up the green block that is furthest away from you    clusterof all green 1 arg1 furthest you arg1 1 ans
+Pick up the blue block on the left side    clusterof all blue 1 leftof all arg1 1 ans
+Pick up the blue block that is next to another blue block and green block, and above an orange block    clusterof all blue 1 arg1 clusterof all blue 1 arg2 clusterof all green 1 arg3 clusterof all orange 1 arg4 and arg2 arg3 arg5 nextto arg5 arg1 1 arg6 above arg4 arg1 1 arg7 and arg6 arg7 ans
+Please pick up the orange block that is located on your left and positioned closest to me    clusterof all orange 1 arg1 leftof you arg1 1 arg2 closest me orange 1 arg3 and arg2 arg3 ans
+Pick up the only yellow block    clusterof all yellow 1 ans
+Pick up the orange block that is closest to you    closest you orange 1 ans
+Pick up the blue block second from your right    clusterof all blue 1 arg1 rightof you arg1 2 ans
+Pick up the yellow block    clusterof all yellow 1 ans
+Pick up the orange block that is closest to you    closest you orange 1 ans
+Grab the green block that is in the middle of the cluster of 3 green blocks    clusterof all green 1 arg1 clusterof all green 3 arg2 middle arg2 arg1 1 ans
+Grab the orange block that is closest to me    closest me orange 1 ans
+Pick up 2nd block to the left    leftof all none 2 ans
+Pick up the yellow block furthest from you    furthest you yello 1 ans
+Please pick up the only yellow block on the table    clusterof all yellow 1 ans
+Please pick up the green block in the center of the table next to two orange blocks    centerof all green 1 arg1 clusterof all orange 2 arg2 nextto arg2 arg1 1 ans
+Pick up the green cube in the center of the group of 5 green cubes to your left    leftof you green 5 arg1 centerof arg1 green 1 ans
+Pick up the green block closest to you    closest you green 1 ans
+Pick the second blue block closest to you    closest you blue 2 ans
+Pick up the closest green block    closest all green 1 ans
+Pick up the green block that is on your left side and is the third closest to you    leftof you green 1 arg1 closest you green 3 arg2 and arg1 arg2 ans
+Pick up the orange block that is the closest to you    closest you orange 1 ans
+Pick up the orange block farthest away from you    farthest you orange 1 ans
+Choose the orange block that is closest to you    closest you orange 1 ans
+Pick up the green block that is the furthest away from you    furthest you green 1 ans
+Pick up the green block which is closest to you    closest you green 1 ans 
+grab the blue block on your far left    farleft you blue 1 ans
+grab the green block in the center of all the blocks    centerof all green 1 ans
+Pick up the 1st green block on your left    leftof you green 1 ans
+pick up the yellow block that is second from the left    leftof you yellow 2 ans
+Grab the orange block closest to you on the table    closest you orange 1 ans
+Pick up the blue block that is farthest away from you    farthest you blue 1 ans 
+Pick up the blue block that is third from the left    leftof all blue 3 ans
+Pick up the yellow block    clusterof all yellow 1 ans
+Pick up the first green block very near to you    closest you green 1 ans 
+pick up the orange block near to the yellow block    clusterof all yellow 1 arg1 closest arg1 orange 1 ans
+pick up the 4th closest blue block to you    closest you blue 4 ans
+pick up the yellow block    clusterof all yellow 1 ans
+There are three orange blocks in front of me. Please pick up the middle orange block    frontof me orange 3 arg1 middleof arg1 orange 1 ans
+Please pick up the green block that is closest to you    closest you green 1 ans
+Pick up the green block closest to you    closest you green 1 ans
+Pick up the green block in the center of the 5 green blocks    clusterof all green 5 arg1 centerof arg1 green 1 ans
+Pick up the yellow block furthest from you    furthest you yellow ans
+Pick up the blue on your left side of the table    leftof you blue 1 ans
+Pick up the blue block that is closest to you    closest you blue 1 ans
+pick up the orange block closest to you    closest you orange 1 ans
+Pick up the green block farthest away from you    farthest you green 1 ans 
+Pick up the orange block farthest away from you    farthest you orange 1 ans  
+pick up the first orange block on your right    rightof you orange 1 ans
+Pick the yellow block furthest from you    furthest you yellow 1 ans
+Pick up the green block that is closest to you    closest you green 1 ans
+Pick up the closest block to you. It is a green block    closest you green 1 ans
+Pick up the yellow block that is closest to a green block    clusterof all green 1 arg1 closest arg1 yellow 1 ans
+Pick up the blue block that is closest to the orange block that is closest to you    closest you orange 1 arg1 closest arg1 blue 1 ans
+Pick up the green block that is closest to you    closest you green 1 ans 
+Pick up the blue block on your right    rightof you blue 1 ans
+Pick up the green block closest to me    closest me green 1 ans
+Pick up the orange block on your left    leftof you orange 1 ans
+Pick up the green block that is closest to the blue block    clusterof all blue 1 arg1 closest arg1 green 1 ans
+Pick up the green block closest to you    closest you green 1 ans
+grab the orange block that is nearest you    closest you orange 1 ans
+Pick up the closest green block    closest all green 1 ans
+Pick up the blue block second furthest from you    furthest you blue 2 ans
+Pick up the yellow block furthest from you    furthest you yellow 1 ans
+Pick up the green block that is nearest to you    closest you green 1 ans
+Pick up the middle orange block    centerof all green 1 ans
+Grab the orange block that is closest to you    closest you orange 1 ans
+pick up the green block closest to me    closest me green 1 ans
+Pick up the blue block that is right below the blue block furthest away from you    furthest you blue 1 arg1 belowof arg1 blue 1 ans
+grab the orange block furthest away from you    furthest you orange 1 ans
+grab the green block that is right in front of you    closest you green 1 ans
+Pick up the green block farthest away from you    furthest you green 1 ans
+Pick up the yellow block that is closest to the green block nearest to you    closest you green 1 arg1 closest arg1 yellow 1 ans
+Pick up the yellow block    clusterof all yellow 1 ans
+Pick up the orange block that is furthest from you and closest to me    furthest you orange 1 arg1 closest me orange 1 arg2 and arg1 arg2 ans
+Please pick up the green block that is positioned closest to you    closest you green 1 ans
+Pick up the orange block that is farthest away from you and to the left    furthest you orange 1 arg1 leftof all orange 1 arg2 and arg1 arg2 ans
+Pick up the yellow block that is closest to me    closest me yellow 1 ans
+Grab the green block that is closest to me    closest me green 1 ans
+Grab the orange block that is closest to you    closest you orange 1 ans
+Pick up the green block closest to you    closest you green 1 ans
+Pick up the orange block that is furthest away from me    furthest me orange 1 ans
+Pick the green block that is in the middle of the other green blocks    clusterof all green all arg1 middleof arg1 green 1 ans
+pick the orange block closest to you    closest you orange 1 ans
+Pick up the block furthest from you    furthest you none 1 ans
+Pick up the blue block that is in between a yellow and an orange block    clusterof all yellow 1 arg1 clusterof all orange 1 arg2 and arg1 arg2 arg3 middleof arg3 blue 1 ans
+Pick up the green block that is the closest to you    closest you green 1 ans
+Pick up the Yellow Block that is furthest from you    furthest you yellow 1 ans
+Pick the green block that is right below the yellow block    clusterof all yellow 1 arg1 belowof arg1 green 1 ans
+Pick the blue block that is farthest from you and right above the orange block    furthest you blue 1 arg1 clusterof all orange 1 arg2 aboveof arg2 none 1 arg3 and arg1 arg3 ans
+Pick up the blue block which is farthest from you    furthest you blue 1 ans
+grab the green block closest to you    closest you green 1 ans
+pick up the closest green block    closest all green 1 ans
+please pick up the green block near me    closest me green 1 ans
+Pick up the yellow block that is the farthest away from you    furthest you yellow 1 ans
+Pick up the orange block that is furthest from you    furthest you orange 1 ans
+Pick up the first green block near you    closest you green 1 ans
+Pick up the green block closest to you    closest you green 1 ans 
+Pick up the orange block closest to you    closest you orange 1 ans
+Pick up the blue block closest to me    closest me blue 1 ans
+Pick up the green block closest to you    closest you green 1 ans
+Pick up the green block nearest to you    closest you green 1 ans
+pick up the orange block closest to me    closest me orange 1 ans
+Pick up the green block closest of you    closest you green 1 ans
+pick up the yellow block closest to me    closest me yellow 1 ans
+pick up the closest orange block    closest none orange 1 ans
+Pick up the blue block that is the second farthest from you    furthest you blue 2 ans
+Pick up the leftmost block    leftmost none none 1 ans
+Pick up the closest orange block to you    closest you orange 1 ans
