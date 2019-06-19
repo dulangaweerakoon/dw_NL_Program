@@ -67,9 +67,9 @@ def define_model(src_vocab, tar_vocab, src_timesteps, tar_timesteps, n_units):
 
 
 # load datasets
-dataset = load_clean_sentences('cmd-prg.pkl')
-train = load_clean_sentences('cmd-prg.pkl')
-test = load_clean_sentences('cmd-prg.pkl')
+dataset = load_clean_sentences('cmd-prg-both.pkl')
+train = load_clean_sentences('cmd-prg-train.pkl')
+test = load_clean_sentences('cmd-prg-test.pkl')
 print(dataset[1,0])
 print(dataset[1,1])
 
@@ -85,30 +85,37 @@ prg_length = max_length(dataset[:, 1])
 print('Program Vocabulary Size: %d' % prg_vocab_size)
 print('Program Max Length: %d' % (prg_length))
 
-dataX = encode_sequences(cmd_tokenizer, cmd_length, train[:, 0])
-dataY = encode_sequences(prg_tokenizer, prg_length, train[:, 1])
-dataY = encode_output(dataY, prg_vocab_size)
+trainX = encode_sequences(cmd_tokenizer, cmd_length, train[:, 0])
+trainY = encode_sequences(prg_tokenizer, prg_length, train[:, 1])
+trainY = encode_output(trainY, prg_vocab_size)
 
-size = dataX.shape[0]
-trainX = []
-trainY = []
-testX = []
-testY = []
-for i in range(0,size):
-    seed = np.random.randint(0,10)
-    if seed < 8:
-        trainX.append(dataX[i])
-        trainY.append(dataY[i])
-    else:
-        testX.append(dataX[i])
-        testY.append(dataY[i])
-trainX = array(trainX)
-trainY = array(trainY)
 
-testX  = array(testX)
-testY  = array(testY)
+testX = encode_sequences(cmd_tokenizer, cmd_length, test[:, 0])
+testY = encode_sequences(prg_tokenizer, prg_length, test[:, 1])
+testY = encode_output(testY, prg_vocab_size)
+
+#size = dataX.shape[0]
+#trainX = []
+#trainY = []
+#testX = []
+#testY = []
+#for i in range(0,size):
+#    seed = np.random.randint(0,10)
+#    if seed < 9:
+#        trainX.append(dataX[i])
+#        trainY.append(dataY[i])
+#    else:
+#        testX.append(dataX[i])
+#        testY.append(dataY[i])
+#trainX = array(trainX)
+#trainY = array(trainY)
+#
+#testX  = array(testX)
+#testY  = array(testY)
+
+
 # define model
-model = define_model(cmd_vocab_size, prg_vocab_size, cmd_length, prg_length, 64)
+model = define_model(cmd_vocab_size, prg_vocab_size, cmd_length, prg_length, 12)
 model.compile(optimizer='adam', loss='categorical_crossentropy')
 #model.load_weights("model.h5")
 # summarize defined model

@@ -61,9 +61,9 @@ def evaluate_model(model, tokenizer, source, raw_dataset):
         length+=1
     return (score/length)*100;
 # Load datasets
-dataset = load_dataset('cmd-prg.pkl')
-train = load_dataset('cmd-prg.pkl')
-test = load_dataset('cmd-prg.pkl')
+dataset = load_dataset('cmd-prg-both.pkl')
+train = load_dataset('cmd-prg-train.pkl')
+test = load_dataset('cmd-prg-test.pkl')
 #print(dataset[0,1])
 prg_tokenizer = create_tokenizer(dataset[:, 1])
 prg_vocab_size = len(prg_tokenizer.word_index) + 1
@@ -77,14 +77,15 @@ cmd_length = max_length(dataset[:, 0])
 # Prepare data
 trainX = encode_sequences(cmd_tokenizer, cmd_length, train[:, 0])
 testX = encode_sequences(cmd_tokenizer, cmd_length, test[:, 0])
-testX = trainX[90:]
+#testX = trainX[90:]
 
 
 
 model = load_model('model.h5')
 
 print('Testing on trained examples')
-accuracy = evaluate_model(model, prg_tokenizer, testX, test)
-print("Accuracy: ",accuracy)
+accuracy = evaluate_model(model, prg_tokenizer, trainX, train)
+print("Training Accuracy: ",accuracy)
 print('Testing on test examples')
-#evaluate_model(model, prg_tokenizer, testX, test)
+accuracy = evaluate_model(model, prg_tokenizer, testX, test)
+print("Testing Accuracy: ",accuracy)
