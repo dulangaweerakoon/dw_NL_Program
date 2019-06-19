@@ -34,7 +34,7 @@ def clean_pairs(lines):
             line = [word.translate(table) for word in line]
             line = [re_print.sub('', word) for word in line]
             # Remove numeric chrs
-            line = [w for w in line if w.isalpha()]
+            #line = [w for w in line if w.isalpha()]
             clean_pair.append(' '.join(line))
         cleaned.append(clean_pair)
     return np.array(cleaned)

@@ -107,3 +107,154 @@ pick up the closest orange block    closest none orange 1 ans
 Pick up the blue block that is the second farthest from you    furthest you blue 2 ans
 Pick up the leftmost block    leftmost none none 1 ans
 Pick up the closest orange block to you    closest you orange 1 ans
+Pick up the closest green block to you    closest you green 1 ans
+Pick up the closest blue block to you    closest you blue 1 ans
+Pick up the closest yellow block to you    closest you yellow 1 ans
+Pick up the closest purple block to you    closest you purple 1 ans
+Pick up the closest brown block to you    closest you brown 1 ans
+Pick up the closest orange block to me    closest me orange 1 ans
+Pick up the closest green block to me    closest me green 1 ans
+Pick up the closest blue block to me    closest me blue 1 ans
+Pick up the closest yellow block to me    closest me yellow 1 ans
+Pick up the closest purple block to me    closest me purple 1 ans
+Pick up the closest brown block to me    closest me brown 1 ans
+grab the closest orange block to you    closest you orange 1 ans
+grab the closest green block to you    closest you green 1 ans
+grab the closest blue block to you    closest you blue 1 ans
+grab the closest yellow block to you    closest you yellow 1 ans
+grab the closest purple block to you    closest you purple 1 ans
+grab the closest brown block to you    closest you brown 1 ans
+grab the closest orange block to me    closest me orange 1 ans
+grab the closest green block to me    closest me green 1 ans
+grab the closest blue block to me    closest me blue 1 ans
+grab the closest yellow block to me    closest me yellow 1 ans
+grab the closest purple block to me    closest me purple 1 ans
+grab the closest brown block to me    closest me brown 1 ans
+pick up the green block near me    closest me green 1 ans
+pick up the orange block near me    closest me orange 1 ans
+pick up the blue block near me    closest me blue 1 ans
+pick up the yellow block near me    closest me yellow 1 ans
+pick up the purple block near me    closest me purple 1 ans
+pick up the brown block near me    closest me brown 1 ans
+pick up the green block near you    closest you green 1 ans
+pick up the orange block near you    closest you orange 1 ans
+pick up the blue block near you    closest you blue 1 ans
+pick up the yellow block near you    closest you yellow 1 ans
+pick up the purple block near you    closest you purple 1 ans
+pick up the brown block near you    closest you brown 1 ans
+Pick up the leftmost block    leftmost none none 1 ans
+Pick up the rightmost block    rightmost none none 1 ans
+Pick up the leftmost block    leftmost none none 1 ans
+Pick up the leftmost block    leftmost none none 1 ans
+Pick up the yellow block    clusterof all yellow 1 ans
+Pick up the green block    clusterof all green 1 ans
+Pick up the orange block    clusterof all orange 1 ans
+Pick up the blue block    clusterof all blue 1 ans
+Pick up the purple block    clusterof all purple 1 ans
+Pick up the brown block    clusterof all brown 1 ans
+grab the yellow block    clusterof all yellow 1 ans
+grab the green block    clusterof all green 1 ans
+grab the orange block    clusterof all orange 1 ans
+grab the blue block    clusterof all blue 1 ans
+grab the purple block    clusterof all purple 1 ans
+grab the brown block    clusterof all brown 1 ans
+green block closest to you    closest you green 1 ans
+orange block closest to you    closest you orange 1 ans
+blue block closest to you    closest you blue 1 ans
+purple block closest to you    closest you purple 1 ans
+brown block closest to you    closest you brown 1 ans
+yellow block closest to you    closest you yellow 1 ans
+green block closest to me    closest me green 1 ans
+orange block closest to me    closest me orange 1 ans
+blue block closest to me    closest me blue 1 ans
+purple block closest to me    closest me purple 1 ans
+brown block closest to me    closest me brown 1 ans
+yellow block closest to me    closest me yellow 1 ans
+Pick up the blue block second furthest from you    furthest you blue 2 ans
+Pick up the yellow block second furthest from you    furthest you yellow 2 ans
+Pick up the green block second furthest from you    furthest you green 2 ans
+Pick up the orange block second furthest from you    furthest you orange 2 ans
+Pick up the purple block second furthest from you    furthest you purple 2 ans
+Pick up the brown block second furthest from you    furthest you brown 2 ans
+Pick up the blue block second furthest from me    furthest me blue 2 ans
+Pick up the yellow block second furthest from me    furthest me yellow 2 ans
+Pick up the green block second furthest from me    furthest me green 2 ans
+Pick up the orange block second furthest from me    furthest me orange 2 ans
+Pick up the purple block second furthest from me    furthest me purple 2 ans
+Pick up the brown block second furthest from me    furthest me brown 2 ans
+Pick up the blue block furthest from you    furthest you blue 1 ans
+Pick up the yellow block furthest from you    furthest you yellow 1 ans
+Pick up the green block furthest from you    furthest you green 1 ans
+Pick up the orange block furthest from you    furthest you orange 1 ans
+Pick up the purple block furthest from you    furthest you purple 1 ans
+Pick up the brown block furthest from you    furthest you brown 1 ans
+Pick up the blue block furthest from me    furthest me blue 1 ans
+Pick up the yellow block furthest from me    furthest me yellow 1 ans
+Pick up the green block furthest from me    furthest me green 1 ans
+Pick up the orange block furthest from me    furthest me orange 1 ans
+Pick up the purple block furthest from me    furthest me purple 1 ans
+Pick up the brown block furthest from me    furthest me brown 1 ans
+Pick up the only yellow block    clusterof all yellow 1 ans
+Pick up the only green block    clusterof all green 1 ans
+Pick up the only purple block    clusterof all purple 1 ans
+Pick up the only brown block    clusterof all brown 1 ans
+Pick up the only blue block    clusterof all blue 1 ans
+Pick up the only orange block    clusterof all orange 1 ans
+Pick up the two orange blocks    clusterof all orange 2 ans
+Pick up the two green blocks    clusterof all green 2 ans
+Pick up the two blue blocks    clusterof all blue 2 ans
+Pick up the two purple blocks    clusterof all purple 2 ans
+Pick up the two brown blocks    clusterof all brown 2 ans
+Pick up the two yellow blocks    clusterof all yellow 2 ans
+please pick up the two orange blocks    clusterof all orange 2 ans
+Pick up the blue block on your left    leftof you blue 1 ans
+Pick up the green block on your left    leftof you green 1 ans
+Pick up the purple block on your left    leftof you purple 1 ans
+Pick up the yellow block on your left    leftof you yellow 1 ans
+Pick up the orange block on your left    leftof you orange 1 ans
+Pick up the brown block on your left    leftof you brown 1 ans
+Pick up the blue block on my left    leftof me blue 1 ans
+Pick up the green block on my left    leftof me green 1 ans
+Pick up the purple block on my left    leftof me purple 1 ans
+Pick up the yellow block on my left    leftof me yellow 1 ans
+Pick up the orange block on my left    leftof me orange 1 ans
+Pick up the brown block on my left    leftof me brown 1 ans
+Pick up the blue block on your left side    leftof you blue 1 ans
+Pick up the green block on your left side    leftof you green 1 ans
+Pick up the purple block on your left side    leftof you purple 1 ans
+Pick up the yellow block on your left side    leftof you yellow 1 ans
+Pick up the orange block on your left side    leftof you orange 1 ans
+Pick up the brown block on your left side    leftof you brown 1 ans
+Pick up the blue block on my left side    leftof me blue 1 ans
+Pick up the green block on my left side    leftof me green 1 ans
+Pick up the purple block on my left side    leftof me purple 1 ans
+Pick up the yellow block on my left side    leftof me yellow 1 ans
+Pick up the orange block on my left side    leftof me orange 1 ans
+Pick up the brown block on my left side    leftof me brown 1 ans
+Pick up the orange block that is nearest you    closest you orange 1 ans
+Pick up the blue block that is nearest you    closest you blue 1 ans
+Pick up the green block that is nearest you    closest you green 1 ans
+Pick up the brown block that is nearest you    closest you brown 1 ans
+Pick up the purple block that is nearest you    closest you purple 1 ans
+Pick up the yellow block that is nearest you    closest you yellow 1 ans
+Pick up the orange block that is nearest you    closest you orange 1 ans
+Pick up the blue block that is nearest to me    closest me blue 1 ans
+Pick up the green block that is nearest to me    closest me green 1 ans
+Pick up the brown block that is nearest to me    closest me brown 1 ans
+Pick up the purple block that is nearest to me    closest me purple 1 ans
+Pick up the yellow block that is nearest to me    closest me yellow 1 ans
+Pick up the orange block that is nearest to me    closest me orange 1 ans
+Pick up the yellow block that is closest to me and furthest from you    closest me yellow 1 arg1 furthest you yellow 1 arg2 and arg1 arg2 ans
+Pick up the blue block that is closest to me and furthest from you    closest me blue 1 arg1 furthest you yellow 1 arg2 and arg1 arg2 ans
+Pick up the green block that is closest to me and furthest from you    closest me green 1 arg1 furthest you yellow 1 arg2 and arg1 arg2 ans
+Pick up the orange block that is closest to me and furthest from you    closest me orange 1 arg1 furthest you yellow 1 arg2 and arg1 arg2 ans
+Pick up the brown block that is closest to me and furthest from you    closest me brown 1 arg1 furthest you yellow 1 arg2 and arg1 arg2 ans
+Pick up the purple block that is closest to me and furthest from you    closest me purple 1 arg1 furthest you yellow 1 arg2 and arg1 arg2 ans
+Pick up the yellow block that is closest to you and furthest from me    closest you yellow 1 arg1 furthest me yellow 1 arg2 and arg1 arg2 ans
+Pick up the blue block that is closest to you and furthest from me    closest you blue 1 arg1 furthest me yellow 1 arg2 and arg1 arg2 ans
+Pick up the green block that is closest to you and furthest from me    closest you green 1 arg1 furthest me yellow 1 arg2 and arg1 arg2 ans
+Pick up the orange block that is closest to you and furthest from me    closest you orange 1 arg1 furthest me yellow 1 arg2 and arg1 arg2 ans
+Pick up the brown block that is closest to you and furthest from me    closest you brown 1 arg1 furthest me yellow 1 arg2 and arg1 arg2 ans
+Pick up the purple block that is closest to you and furthest from me    closest you purple 1 arg1 furthest me yellow 1 arg2 and arg1 arg2 ans
+Pick up second block to the left    leftof all none 2 ans
+Pick up second block to the right    rightof all none 2 ans

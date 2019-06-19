@@ -71,14 +71,13 @@ train = load_clean_sentences('cmd-prg.pkl')
 test = load_clean_sentences('cmd-prg.pkl')
 print(dataset[1,0])
 print(dataset[1,1])
-# prepare english tokenizer
+
 cmd_tokenizer = create_tokenizer(dataset[:, 0])
 cmd_vocab_size = len(cmd_tokenizer.word_index) + 1
 cmd_length = max_length(dataset[:, 0])
 print('Command Vocabulary Size: %d' % cmd_vocab_size)
 print('Command Max Length: %d' % (cmd_length))
 
-# prepare german tokenizer
 prg_tokenizer = create_tokenizer(dataset[:, 1])
 prg_vocab_size = len(prg_tokenizer.word_index) + 1
 prg_length = max_length(dataset[:, 1])
@@ -89,13 +88,14 @@ dataX = encode_sequences(cmd_tokenizer, cmd_length, train[:, 0])
 dataY = encode_sequences(prg_tokenizer, prg_length, train[:, 1])
 dataY = encode_output(dataY, prg_vocab_size)
 
+
 trainX = dataX[0:90]
 trainY = dataY[0:90]
 
 testX  = dataX[90:]
 testY  = dataY[90:]
 # define model
-model = define_model(cmd_vocab_size, prg_vocab_size, cmd_length, prg_length, 32)
+model = define_model(cmd_vocab_size, prg_vocab_size, cmd_length, prg_length, 64)
 model.compile(optimizer='adam', loss='categorical_crossentropy')
 #model.load_weights("model.h5")
 # summarize defined model

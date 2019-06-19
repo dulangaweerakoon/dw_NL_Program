@@ -84,7 +84,7 @@ testX = trainX[90:]
 model = load_model('model.h5')
 
 print('Testing on trained examples')
-accuracy = evaluate_model(model, prg_tokenizer, trainX, train)
+accuracy = evaluate_model(model, prg_tokenizer, testX, test)
 print("Accuracy: ",accuracy)
 print('Testing on test examples')
 #evaluate_model(model, prg_tokenizer, testX, test)
