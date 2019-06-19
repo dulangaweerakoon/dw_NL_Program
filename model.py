@@ -15,6 +15,7 @@ from keras.layers import RepeatVector
 from keras.layers import TimeDistributed
 from keras.callbacks import ModelCheckpoint
 import os 
+import numpy as np
 os.environ["CUDA_VISIBLE_DEVICES"]="3,4,6"
 
 # load a clean dataset
@@ -88,12 +89,24 @@ dataX = encode_sequences(cmd_tokenizer, cmd_length, train[:, 0])
 dataY = encode_sequences(prg_tokenizer, prg_length, train[:, 1])
 dataY = encode_output(dataY, prg_vocab_size)
 
+size = dataX.shape[0]
+trainX = []
+trainY = []
+testX = []
+testY = []
+for i in range(0,size):
+    seed = np.random.randint(0,10)
+    if seed < 8:
+        trainX.append(dataX[i])
+        trainY.append(dataY[i])
+    else:
+        testX.append(dataX[i])
+        testY.append(dataY[i])
+trainX = array(trainX)
+trainY = array(trainY)
 
-trainX = dataX[0:90]
-trainY = dataY[0:90]
-
-testX  = dataX[90:]
-testY  = dataY[90:]
+testX  = array(testX)
+testY  = array(testY)
 # define model
 model = define_model(cmd_vocab_size, prg_vocab_size, cmd_length, prg_length, 64)
 model.compile(optimizer='adam', loss='categorical_crossentropy')
