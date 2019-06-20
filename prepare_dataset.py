@@ -15,8 +15,8 @@ raw_data = load_clean_data('cmd-prg.pkl')
 dataset = raw_data
 random.shuffle(dataset)
 #
-train_set = dataset[:220, :]
-test_set = dataset[220:, :]
+train_set = dataset[:280, :]
+test_set = dataset[280:, :]
 #
 save_clean_data(dataset, 'cmd-prg-both.pkl')
 save_clean_data(train_set, 'cmd-prg-train.pkl')

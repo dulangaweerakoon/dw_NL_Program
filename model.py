@@ -115,7 +115,7 @@ testY = encode_output(testY, prg_vocab_size)
 
 
 # define model
-model = define_model(cmd_vocab_size, prg_vocab_size, cmd_length, prg_length, 12)
+model = define_model(cmd_vocab_size, prg_vocab_size, cmd_length, prg_length, 24)
 model.compile(optimizer='adam', loss='categorical_crossentropy')
 #model.load_weights("model.h5")
 # summarize defined model

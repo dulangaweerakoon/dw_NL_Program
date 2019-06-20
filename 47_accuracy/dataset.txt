@@ -1,14 +1,14 @@
 blue block in the back of all the other blocks    clusterof all blue 1 arg1 backof all arg1 1 ans
-Pick up the green block that is furthest away from you    furthest you green 1 ans
-Pick up the blue block on the left side    leftof all blue 1 ans
+Pick up the green block that is furthest away from you    clusterof all green 1 arg1 furthest you arg1 1 ans
+Pick up the blue block on the left side    clusterof all blue 1 leftof all arg1 1 ans
 Pick up the blue block that is next to another blue block and green block, and above an orange block    clusterof all blue 1 arg1 clusterof all blue 1 arg2 clusterof all green 1 arg3 clusterof all orange 1 arg4 and arg2 arg3 arg5 nextto arg5 arg1 1 arg6 above arg4 arg1 1 arg7 and arg6 arg7 ans
-Please pick up the orange block that is located on your left and positioned closest to me    leftof you orange 1 arg1 closest me orange 1 arg2 and arg1 arg2 ans
+Please pick up the orange block that is located on your left and positioned closest to me    clusterof all orange 1 arg1 leftof you arg1 1 arg2 closest me orange 1 arg3 and arg2 arg3 ans
 Pick up the only yellow block    clusterof all yellow 1 ans
 Pick up the orange block that is closest to you    closest you orange 1 ans
-Pick up the blue block second from your right    rightof you blue 2 ans
+Pick up the blue block second from your right    clusterof all blue 1 arg1 rightof you arg1 2 ans
 Pick up the yellow block    clusterof all yellow 1 ans
 Pick up the orange block that is closest to you    closest you orange 1 ans
-Grab the green block that is in the middle of the cluster of 3 green blocks    clusterof all green 3 arg1 centerof arg1 green 1 ans
+Grab the green block that is in the middle of the cluster of 3 green blocks    clusterof all green 1 arg1 clusterof all green 3 arg2 centerof arg2 arg1 1 ans
 Grab the orange block that is closest to me    closest me orange 1 ans
 Pick up 2nd block to the left    leftof all none 2 ans
 Pick up the yellow block furthest from you    furthest you yello 1 ans
@@ -258,119 +258,3 @@ Pick up the brown block that is closest to you and furthest from me    closest y
 Pick up the purple block that is closest to you and furthest from me    closest you purple 1 arg1 furthest me yellow 1 arg2 and arg1 arg2 ans
 Pick up second block to the left    leftof all none 2 ans
 Pick up second block to the right    rightof all none 2 ans
-Pick up the green block    clusterof all green 1 ans
-pick up the orange block    clusterof all orange 1 ans  
-pick up the blue block    clusterof all blue 1 ans  
-pick up the yellow block    clusterof all yellow 1 ans
-pick up the purple block    clusterof all purple 1 ans
-pick up the brown block    clusterof all brown 1 ans
-Pick up the green block that is directly in front of me    frontof me green 1 ans
-pick up the orange block that is directly in front of    frontof me orange 1 ans 
-pick up the blue block that is directly in front of me    frontof me blue 1 ans
-pick up the yellow block that is directly in front of me    frontof me yellow 1 ans
-pick up the purple block that is directly in front of me    frontof me purple 1 ans
-pick up the brown block that is directly in front of me    frontof me brown 1 ans
-Pick up the topmost blue block on the table    topmost all blue 1 ans
-Pick up the topmost green block on the table    topmost all green 1 ans  
-pick up the topmost orange block on the table    topmost all orange 1 ans  
-pick up the topmost yellow block on the table    topmost all yellow 1 ans  
-pick up the topmost purple block on the table    topmost all purple 1 ans  
-pick up the topmost brown block on the table    topmost all brown 1 ans
-pick up the topmost brown block    topmost all brown 1 ans
-Pick up the topmost blue block    topmost all blue 1 ans
-Pick up the topmost green block    topmost all green 1 ans  
-pick up the topmost orange block    topmost all orange 1 ans  
-pick up the topmost yellow block    topmost all yellow 1 ans  
-pick up the topmost purple block    topmost all purple 1 ans
-Pick up the topmost blue block from you    topmost you blue 1 ans
-Pick up the topmost green block  from you    topmost you green 1 ans
-pick up the topmost orange block from you    topmost you orange 1 ans
-pick up the topmost yellow block from you    topmost you yellow 1 ans 
-pick up the topmost purple block from you    topmost you purple 1 ans
-Pick up the topmost brown block from you    topmost you brown 1 ans
-Pick up the topmost blue block from me    topmost me blue 1 ans
-Pick up the topmost green block from me    topmost me green 1 ans 
-pick up the topmost orange block from me    topmost me orange 1 ans 
-pick up the topmost yellow block from me    topmost me yellow 1 ans
-pick up the topmost purple block from me    topmost me purple 1 ans
-Pick up the topmost brown block from me    topmost me brown 1 ans
-Pick up the blue block closest to me    closest me blue 1 ans
-Pick up the orange block closest to me    closest me orange 1 ans
-Pick up the green block closest to me    closest me green 1 ans
-Pick up the yellow block closest to me    closest me yellow 1 ans
-Pick up the purple block closest to me    closest me purple 1 ans
-Pick up the brown block closest to me    closest me brown 1 ans
-Pick up the blue block that is to your leftmost    leftmost you blue 1 ans
-Pick up the orange block that is to your leftmost    leftmost you orange 1 ans
-Pick up the green block that is to your leftmost    leftmost you green 1 ans
-Pick up the yellow block that is to your leftmost    leftmost you yellow 1 ans
-Pick up the purple block that is to your leftmost    leftmost you purple 1 ans
-Pick up the brown block that is to your leftmost    leftmost you brown 1 ans
-Pick up the blue block that is to your rightmost    rightmost you blue 1 ans
-Pick up the orange block that is to your rightmost    rightmost you orange 1 ans
-Pick up the green block that is to your rightmost    rightmost you green 1 ans
-Pick up the yellow block that is to your rightmost    rightmost you yellow 1 ans
-Pick up the purple block that is to your rightmost    rightmost you purple 1 ans
-Pick up the brown block that is to your rightmost    rightmost you brown 1 ans
-Pick up the blue block that is to my leftmost    leftmost my blue 1 ans
-Pick up the orange block that is to my leftmost    leftmost my orange 1 ans
-Pick up the green block that is to my leftmost    leftmost my green 1 ans
-Pick up the yellow block that is to my leftmost    leftmost my yellow 1 ans
-Pick up the purple block that is to my leftmost    leftmost my purple 1 ans
-Pick up the brown block that is to my leftmost    leftmost my brown 1 ans
-Pick up the blue block that is to my rightmost    rightmost me blue 1 ans
-Pick up the orange block that is to my rightmost    rightmost me orange 1 ans
-Pick up the green block that is to my rightmost    rightmost me green 1 ans
-Pick up the yellow block that is to my rightmost    rightmost me yellow 1 ans
-Pick up the purple block that is to my rightmost    rightmost me purple 1 ans
-Pick up the brown block that is to my rightmost    rightmost me brown 1 ans
-Grab the second green block from your left side    leftof you green 2 ans
-Grab the second orange block from your left side    leftof you orange 2 ans
-Grab the second blue block from your left side    leftof you blue 2 ans
-Grab the second yellow block from your left side    leftof you yellow 2 ans
-Grab the second purple block from your left side    leftof you purple 2 ans
-Grab the second brown block from your left side    leftof you brown 2 ans
-Grab the second rightmost yellow block from you    rightmost you yellow 2 ans
-Grab the second rightmost blue block from you    rightmost you blue 2 ans
-Grab the second rightmost orange block from you    rightmost you orange 2 ans
-Grab the second rightmost green block from you    rightmost you green 2 ans
-Grab the second rightmost purple block from you    rightmost you purple 2 ans
-Grab the second rightmost brown block from you    rightmost you brown 2 ans
-Grab the second rightmost yellow block from me    rightmost me yellow 2 ans
-Grab the second rightmost blue block from me    rightmost me blue 2 ans
-Grab the second rightmost orange block from me    rightmost me orange 2 ans
-Grab the second rightmost green block from me    rightmost me green 2 ans
-Grab the second rightmost purple block from me    rightmost me purple 2 ans
-Grab the second rightmost brown block from me    rightmost me brown 2 ans
-Grab the second rightmost yellow block from you on the table    rightmost you yellow 2 ans
-Grab the second rightmost blue block from you on the table    rightmost you blue 2 ans
-Grab the second rightmost orange block from you on the table    rightmost you orange 2 ans
-Grab the second rightmost green block from you on the table    rightmost you green 2 ans
-Grab the second rightmost purple block from you on the table    rightmost you purple 2 ans
-Grab the second rightmost brown block from you on the table    rightmost you brown 2 ans
-Grab the second rightmost yellow block from me on the table    rightmost me yellow 2 ans
-Grab the second rightmost blue block from me on the table    rightmost me blue 2 ans
-Grab the second rightmost orange block from me on the table    rightmost me orange 2 ans
-Grab the second rightmost green block from me on the table    rightmost me green 2 ans
-Grab the second rightmost purple block from me on the table    rightmost me purple 2 ans
-Grab the second rightmost brown block from me on the table    rightmost me brown 2 ans
-Grab the topmost green block on the table    topmost all green 1 ans
-Grab the topmost blue block on the table    topmost all blue 1 ans
-Grab the topmost orange block on the table    topmost all orange 1 ans
-Grab the topmost yellow block on the table    topmost all yellow 1 ans
-Grab the topmost purple block on the table    topmost all purple 1 ans
-Grab the topmost brown block on the table    topmost all brown 1 ans
-Grab the topmost green block on the table from you    topmost you green 1 ans
-Grab the topmost blue block on the table from you    topmost you blue 1 ans
-Grab the topmost orange block on the table from you    topmost you orange 1 ans
-Grab the topmost yellow block on the table from you    topmost you yellow 1 ans
-Grab the topmost purple block on the table from you    topmost you purple 1 ans
-Grab the topmost brown block on the table from you    topmost you brown 1 ans
-Grab the topmost green block on the table from me    topmost me green 1 ans
-Grab the topmost blue block on the table from me    topmost me blue 1 ans
-Grab the topmost orange block on the table from me    topmost me orange 1 ans
-Grab the topmost yellow block on the table from me    topmost me yellow 1 ans
-Grab the topmost purple block on the table from me    topmost me purple 1 ans
-Grab the topmost brown block on the table from me    topmost me brown 1 ans
-pick up the the block in the middle    centerof all none 1 ans
-Pick up the yellow block in between those 2 green blocks, and that blue block    clusterof all green 2 arg1 clusterof all blue 1 arg2 and arg1 arg2 arg3 centerof arg3 yellow 1 ans 
