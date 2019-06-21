@@ -79,13 +79,18 @@ trainX = encode_sequences(cmd_tokenizer, cmd_length, train[:, 0])
 testX = encode_sequences(cmd_tokenizer, cmd_length, test[:, 0])
 #testX = trainX[90:]
 
-
+#print(train[0,0])
 
 model = load_model('model.h5')
+#
+#print('Testing on trained examples')
+#accuracy = evaluate_model(model, prg_tokenizer, trainX, train)
+#print("Training Accuracy: ",accuracy)
+#print('Testing on test examples')
+#accuracy = evaluate_model(model, prg_tokenizer, testX, test)
+#print("Testing Accuracy: ",accuracy)
 
-print('Testing on trained examples')
-accuracy = evaluate_model(model, prg_tokenizer, trainX, train)
-print("Training Accuracy: ",accuracy)
-print('Testing on test examples')
-accuracy = evaluate_model(model, prg_tokenizer, testX, test)
-print("Testing Accuracy: ",accuracy)
+while 1:
+    text = input("Type Command")
+    text = encode_sequences(cmd_tokenizer, cmd_length,[text])
+    print("Command: ",predict_sequence(model,prg_tokenizer,text))
