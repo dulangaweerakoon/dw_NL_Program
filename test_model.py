@@ -91,6 +91,6 @@ model = load_model('model.h5')
 #print("Testing Accuracy: ",accuracy)
 
 while 1:
-    text = input("Type Command")
+    text = input("Type Command: ")
     text = encode_sequences(cmd_tokenizer, cmd_length,[text])
     print("Command: ",predict_sequence(model,prg_tokenizer,text))
