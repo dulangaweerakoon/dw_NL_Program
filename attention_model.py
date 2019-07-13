@@ -9,14 +9,18 @@ from keras.utils import to_categorical
 from keras.utils.vis_utils import plot_model
 from keras.models import Sequential
 from keras.layers import LSTM
-from keras.layers import Dense
+#from keras.layers import GRU, Input
+#from keras.layers import Dense
+from tensorflow.python.keras.layers import Input, GRU, Dense, Concatenate, TimeDistributed
+from tensorflow.python.keras.models import Model
 from keras.layers import Embedding
-from keras.layers import RepeatVector
-from keras.layers import TimeDistributed
+#from keras.layers import RepeatVector
+#from keras.layers import TimeDistributed
 from keras.callbacks import ModelCheckpoint
 import os 
 import numpy as np
-from attention_decoder import AttentionDecoder
+#from attention_decoder import AttentionDecoder
+from attention_keras.layers.attention import AttentionLayer
 os.environ["CUDA_VISIBLE_DEVICES"]="3,4,6"
 
 # load a clean dataset
@@ -66,7 +70,22 @@ def define_model(src_vocab, tar_vocab, src_timesteps, tar_timesteps, n_units):
 	model.add(TimeDistributed(Dense(tar_vocab, activation='softmax')))
 	return model
 
-
+def define_attention_model(src_vocab, tar_vocab, src_timesteps, tar_timesteps, n_units):
+	encoder_inputs = Input(shape=(src_timesteps, src_vocab), name='encoder_inputs')
+	decoder_inputs = Input(shape=(tar_timesteps - 1, tar_vocab), name='decoder_inputs') 
+	encoder_gru = GRU(n_units, return_sequences=True,return_state=True, name='encoder_gru')   
+	encoder_out, encoder_state = encoder_gru(encoder_inputs)
+	decoder_gru = GRU(n_units, return_sequences=True,return_state=True, name='decoder_gru')
+	decoder_out, decoder_state = decoder_gru(decoder_inputs,initial_state=encoder_state)
+	attn_layer = AttentionLayer(name='attention_layer')
+	attn_out, attn_states = attn_layer([encoder_out, decoder_out])
+	decoder_concat_input = Concatenate(axis=-1, name='concat_layer')([decoder_out, attn_out])
+	dense = Dense(tar_vocab, activation='softmax', name='softmax_layer')
+	dense_time = TimeDistributed(dense, name='time_distributed_layer')
+	decoder_pred = dense_time(decoder_concat_input)
+	#model = Model(inputs=[encoder_inputs, decoder_inputs],outputs=decoder_pred)
+	model = Model(inputs=encoder_inputs,outputs=decoder_pred)
+	return model
 # load datasets
 dataset = load_clean_sentences('cmd-prg-both.pkl')
 train = load_clean_sentences('cmd-prg-train.pkl')
@@ -116,11 +135,13 @@ testY = encode_output(testY, prg_vocab_size)
 
 
 # define model
-model = define_model(cmd_vocab_size, prg_vocab_size, cmd_length, prg_length, 24)
+#model2 = define_model(cmd_vocab_size, prg_vocab_size, cmd_length, prg_length, 24)
+model = define_attention_model(cmd_vocab_size, prg_vocab_size, cmd_length, prg_length, 24)
 model.compile(optimizer='adam', loss='categorical_crossentropy')
 #model.load_weights("model.h5")
 # summarize defined model
 print(model.summary())
+#print(model2.summary())
 #plot_model(model, to_file='model.png', show_shapes=True)
 # fit model
 filename = 'attention_model.h5'

@@ -4,7 +4,7 @@ from keras.preprocessing.text import Tokenizer
 from keras.preprocessing.sequence import pad_sequences
 from keras.models import load_model
 import os
-os.environ["CUDA_VISIBLE_DEVICES"]="3,4,6"
+os.environ["CUDA_VISIBLE_DEVICES"]="0,1,7"
 def load_dataset(filename):
     return load(open(filename, 'rb'))
 

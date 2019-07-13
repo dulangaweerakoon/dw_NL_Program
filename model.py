@@ -122,6 +122,6 @@ model.compile(optimizer='adam', loss='categorical_crossentropy')
 print(model.summary())
 #plot_model(model, to_file='model.png', show_shapes=True)
 # fit model
-filename = 'model.h5'
+filename = 'model2.h5'
 checkpoint = ModelCheckpoint(filename, monitor='val_loss', verbose=1, save_best_only=True, mode='min')
-model.fit(trainX, trainY, epochs=5000, batch_size=64, validation_data=(testX, testY), callbacks=[checkpoint], verbose=1)
+#model.fit(trainX, trainY, epochs=5000, batch_size=64, validation_data=(testX, testY), callbacks=[checkpoint], verbose=1)
