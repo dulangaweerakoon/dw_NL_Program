@@ -23,18 +23,17 @@ Z = linkage(X, 'average')
 c, coph_dists = cophenet(Z, pdist(X))
 print(c)
 
-
-def get_linkage(id):
-    batch = configs[16*id:16*(id+1)-1]
-    X = [x[1:] for x in batch]
-    labels = [x[0] for x in batch]
-
-    Z = linkage(X, 'average')
-    c, coph_dists = cophenet(Z, pdist(X))
-    print(c)
-    return Z,X,labels
-
-
-def break_program_to_subprograms(program):
-    
-
+plt.figure(figsize=(25, 10))
+plt.title('Hierarchical Clustering Dendrogram')
+plt.xlabel('sample index')
+plt.ylabel('distance')
+dendrogram(
+    Z,
+    leaf_rotation=90.,  # rotates the x axis labels
+    leaf_font_size=8.,  # font size for the x axis labels
+    labels=labels
+)
+#plt.show()
+plt.savefig('test.png')
+print(labels)
+print(Z)
