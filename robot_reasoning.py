@@ -67,6 +67,8 @@ def find_clusters(colour,num,subscene):
                 else:
                     outscene.append(0)
     return outscene   
+def visualize_subscene(subscene):
+   
 def execute_subprogram(subprogram,subscene):
     if (subprogram[0]=="clusterof"):
         if (subprogram[1]=="all"):
@@ -74,8 +76,13 @@ def execute_subprogram(subprogram,subscene):
         elif "arg" in subprogram[1]:
             return find_clusters(COLOURS[subprogram[2]],int(subprogram[3]),subscenes[subprogram[1]])
         
-        
 
+def execute_program(program):
+    prg = break_program_to_subprograms(program)
+    for prg_ in prg:
+        ans = execute_subprogram(prg_,None)
+        subscenes.append(ans)        
+print("df",labels)
 prg = break_program_to_subprograms("clusterof all green 1 arg1 clusterof yellow 1 ans")
 print(prg)                
 ans = execute_subprogram(prg[0],None)
